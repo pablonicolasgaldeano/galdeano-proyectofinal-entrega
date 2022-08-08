@@ -1,0 +1,111 @@
+.staff {
+    @extend %propiedades2;
+    margin: auto;
+    padding: 20px 0 50px;
+    background-color: $bg-basengd;
+    color: $bg-handf;
+    font-family: $font-desing;
+    font-size: map-get($map: $propiedades01, $key:f-s );
+    text-align: center;
+}
+
+/*Footer*/
+.pie-pagina { 
+            @extend %propiedades2;
+            background-color: $bg-handf;
+    .grupo-1 {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap:50px;
+            padding: 45px 0px;
+        .box {
+            figure {
+                    @extend %propiedades2;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                img {
+                    width: 250px;
+                }
+            }
+           h2 {
+            color: map-get($map: $propiedades01, $key:color);
+            margin-bottom: 25px;
+            font-size: map-get($map: $propiedades01, $key:f-s)
+           }
+           p {
+            color: white;
+            margin-bottom: 10px;
+           }
+        }
+        .red-social {
+            a {
+                @extend %propiedades1;
+                 &:hover {
+                    color: map-get($map: $propiedades01, $key:color );
+                }
+            }
+        }
+    }
+    .grupo-2 {
+        background-color: $bg-handf;
+        padding: 15px 10px;
+        text-align: center;
+        color: white;
+        small {
+            font-size: 15px;
+        }
+    }
+}
+
+/*Media query*/
+
+.bg-navngd {
+    background-color: black ;
+}
+
+.nav-link {
+    color: white;
+}
+
+.z-navngd {
+    z-index: 1;
+}
+
+.barra-ngdstaff {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.barra-ngdtech {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.barra-ngdstaff {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.barra-ngdequipo {
+    background-color: rgb(205, 205, 205);
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.parrafo-staff {
+    background-color: white;
+    color: black;
+}
+.red-social{
+    background-color: rgb(0, 0, 0);
+}

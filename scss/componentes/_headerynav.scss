@@ -1,0 +1,56 @@
+/*Header*/
+.navbar{ 
+    background-color: black;
+    @include mixin1 (auto);
+    height: 100px;
+    padding: 1em;
+    font-family: $font-desing;
+
+    .logo {
+        @include mixin1 (10%);
+        padding-left: 20px;
+    }
+}
+.lista-ul{
+    display: flex;
+}
+/*Nav*/
+nav {
+    ul { 
+        list-style: none;
+        font-family: $font-desing;
+        font-weight: 400;
+        li { 
+            padding: 20px 60px;
+            font-size: 18px;
+        }
+    }
+    a { 
+        text-align: center;
+        color:map-get($map: $propiedades01, $key:color );
+        text-decoration: $textdec-simple;
+    }
+}
+/*Media Query*/
+
+/*Mobie query desktop*/
+
+@media only screen and (max-width: 961px) {
+    .staffaside {
+        @include mixin2(gray)
+    }
+}
+/*Media queries mobile*/
+
+@media only screen and (max-width: 480px) {
+    .staffaside {
+        @include mixin2(blue)
+    }
+}
+.redes{
+    display: flex;
+    align-items: flex-end;
+    flex-direction:column-reverse;
+    position: relative;
+    top: 100px;
+}

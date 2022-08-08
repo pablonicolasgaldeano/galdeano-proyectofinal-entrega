@@ -1,0 +1,6 @@
+@mixin mixin1 ($ancho) {
+    width: $ancho;
+ }
+ @mixin mixin2 ($color) {
+     background-color: $color;
+ }
